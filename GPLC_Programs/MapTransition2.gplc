@@ -1,0 +1,19 @@
+MapTransition2
+~
+w = 0 
+ u = 1 
+ v = 1 
+ posU = 2 
+ posV = 3 
+ currentMap = 7 
+ nextU = 1000000 
+ nextV = 22000000 
+ nextMap = 1 
+ flag = 0 
+ SaveGame = 3 
+ ~ 
+ --signal 1 
+ chg_ps0 posU flag nextU 
+ chg_ps0 posV flag nextV 
+ chg_ps0 currentMap flag nextMap 
+ set_event_context SaveGame

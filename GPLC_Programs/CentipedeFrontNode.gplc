@@ -1,0 +1,72 @@
+CentipedeFrontNode
+~
+nl0 = 0 
+ nl1 = 0 
+ nl2 = 0 
+ nl3 = 0 
+ nl4 = 0 
+ nl5 = 0 
+ c0 = 0 
+ c1 = 0 
+ array_index = 0 
+ base_id = 164 
+ climb_flag = 0 
+ fireball_flag = 0 
+ fb_w = 0 
+ fb_u = 0 
+ fb_v = 0 
+ fb_angle = 0 
+ npc_type = 2 
+ c_health = 40 
+ w = 0 
+ u = 0 
+ v = 0 
+ w_ = 0 
+ u_ = 0 
+ v_ = 0 
+ fg_pos_w = 0 
+ fg_pos_u = 0 
+ fg_pos_v = 0 
+ dir_vector_u = 0 
+ dir_vector_v = 0 
+ direction = 1 
+ last_dir = 0 
+ speed = 0 
+ avoid_dist = 1 
+ attack_mode = 1 
+ fire_prob = 0 
+ dir0 = 1 
+ dir1 = 1 
+ dir2 = 1 
+ dir3 = 1 
+ dir4 = 1 
+ dir5 = 1 
+ node_num = 0 
+ end_node = 5 
+ head_index = 0 
+ sig129 = 129 
+ sig131 = 131 
+ texture__ = 9 
+ rep = 1 
+ add = 0 
+ nl6 = 0 
+ ~ 
+ --signal 0 
+ npc_damage 0 
+ --signal 128 
+ init_npc npc_type array_index 
+ send_signal sig129 w u v 
+ --signal 129 
+ npc_decision fireball_flag 
+ cpede_move fireball_flag 0 
+ --signal 130 
+ cpede_move fireball_flag 1 
+ --signal 131 
+ if 1 c0 c1 27 21 
+ chg_state texture__ rep c0 nl6 nl1 nl2 nl6 nl1 nl2 
+ chg_value c0 add rep nl0 nl1 nl2 
+ send_signal sig131 nl0 nl1 nl2 
+ send_signal sig131 nl3 nl4 nl5 
+ chg_grid add nl6 nl1 nl2 nl6 nl1 nl2 
+ chg_grid_ add nl0 nl1 nl2 nl0 nl1 nl2 
+ send_signal sig131 nl3 nl4 nl5

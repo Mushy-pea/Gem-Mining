@@ -1,0 +1,20 @@
+BlueKey
+~
+w1 = 1 
+ u = 16 
+ v = 23 
+ val = 4 
+ abs = 2 
+ key = 80 
+ mode = 0 
+ w0 = -2 
+ msg_length0 = 27 
+ msg_length1 = 2 
+ ~ 
+ --signal 1 
+ chg_ps1 val abs key 
+ chg_grid mode w0 u v w0 u v 
+ chg_grid_ mode w1 u v w1 u v 
+ pass_msg 29 msg_length0 0 25 41 47 63 33 41 46 63 46 34 31 63 
+ 28 38 47 31 63 37 31 51 63 29 27 44 30 66 
+ pass_msg 4 msg_length1 2 1

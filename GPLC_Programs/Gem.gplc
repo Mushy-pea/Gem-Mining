@@ -1,0 +1,33 @@
+Gem
+~
+w1 = 0 
+ u = 0 
+ v = 0 
+ health = 0 
+ gems = 2 
+ add = 0 
+ v_ = 1 
+ mode = 0 
+ w0 = -1 
+ msg_length0 = 26 
+ msg_length1 = 2 
+ u' = 25 
+ v' = 18 
+ del = 0 
+ u__ = 1 
+ v__ = 2 
+ rep = 1 
+ new_u = 25000000 
+ new_v = 18000000 
+ copy = 2 
+ ~ 
+ --signal 1 
+ chg_ps1 health add v_ 
+ chg_ps1 gems add v_ 
+ chg_state u__ rep new_u w0 u v w0 u' v' 
+ chg_state v__ rep new_v w0 u v w0 u' v' 
+ chg_grid del w0 u v w0 u v 
+ chg_grid_ copy w1 u v w1 u' v' 
+ pass_msg 28 msg_length0 0 25 41 47 63 33 41 46 63 27 63 33 31 
+ 39 66 63 8 31 27 38 46 34 63 70 54 66 
+ pass_msg 4 msg_length1 2 2

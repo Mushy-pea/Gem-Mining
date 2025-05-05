@@ -1,0 +1,14 @@
+Teleporter2
+~
+w = 0 
+ u = 0 
+ v = 0 
+ msg_length0 = 23 
+ msg_length1 = 4 
+ msg_length2 = 2 
+ ~ 
+ --signal 1 
+ pass_msg 25 msg_length0 0 16 38 27 51 31 44 63 49 27 45 63 46 
+ 31 38 31 42 41 44 46 31 30 73 
+ pass_msg 4 msg_length2 2 19 
+ pass_msg 6 msg_length1 3 13500000 41500000 2100000

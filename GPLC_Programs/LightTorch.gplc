@@ -1,0 +1,64 @@
+LightTorch
+~
+w = 0 
+ u = 0 
+ v = 0 
+ ps_0 = 0 
+ ps_1 = 0 
+ ps_2 = 0 
+ ps_3 = 0 
+ ps_4 = 0 
+ ps_5 = 0 
+ ps_6 = 0 
+ ps_7 = 0 
+ game_t = 0 
+ torch_t0 = 0 
+ ps_10 = 0 
+ ps_11 = 0 
+ ps_12 = 0 
+ ps_13 = 0 
+ torches = 0 
+ ps_15 = 0 
+ ps_16 = 0 
+ ps_17 = 0 
+ ps_18 = 0 
+ ps_19 = 0 
+ ps_20 = 0 
+ torch_t_limit = 2400 
+ sig3 = 3 
+ sig4 = 4 
+ sub = 2 
+ torches_ = 3 
+ unit = 1 
+ ps_21 = 0 
+ ps_22 = 0 
+ ps_23 = 0 
+ ps_24 = 0 
+ ps_25 = 0 
+ ps_26 = 0 
+ ps_27 = 0 
+ ps_28 = 0 
+ game_t_ = 0 
+ ps_30 = 0 
+ ps_31 = 0 
+ torch_t0' = 5 
+ msg_length = 29 
+ torch_t_limit' = 6 
+ msg_length' = 17 
+ ~ 
+ --signal 2 
+ copy_ps0 ps_0 w u v 
+ copy_ps1 ps_11 w u v 
+ copy_ps0 ps_21 w u v 
+ send_signal sig3 w u v 
+ --signal 3 
+ chg_value game_t sub torch_t0 w u v 
+ send_signal sig4 w u v 
+ --signal 4 
+ if 2 game_t ps_10 49 0 
+ if_ 2 torches w 12 31 
+ chg_ps1 torches_ sub unit 
+ chg_ps0 torch_t0' unit game_t_ 
+ chg_ps0 torch_t_limit' unit torch_t_limit 
+ pass_msg 31 msg_length 0 25 41 47 63 34 27 48 31 40 65 46 63 
+ 33 41 46 63 27 40 51 63 46 41 44 29 34 31 45 66

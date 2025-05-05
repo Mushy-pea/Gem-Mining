@@ -1,0 +1,43 @@
+BulletPrototype
+~
+i0 = 0 
+ i1 = 0 
+ i2 = 0 
+ u = 0 
+ v = 0 
+ w_block = 0 
+ vel_u = 0 
+ vel_v = 0 
+ init_u_block = 0 
+ init_v_block = 0 
+ obj_flag = 0 
+ hit_state = 0 
+ w_ = 0 
+ u_ = 0 
+ v_ = 0 
+ copy = 2 
+ model_w = -1 
+ model_u = 0 
+ model_v = 1 
+ sig3 = 3 
+ zero = 0 
+ one = 1 
+ two = 2 
+ obj_flag_ = 11 
+ w = 0 
+ three = 3 
+ ~ 
+ --signal 2 
+ chg_state one one u model_w model_u model_v w_block init_u_block init_v_block 
+ chg_state two one v model_w model_u model_v w_block init_u_block init_v_block 
+ chg_state three zero w model_w model_u model_v w_block init_u_block init_v_block 
+ chg_state obj_flag_ zero obj_flag model_w model_u model_v w_block init_u_block init_v_block 
+ send_signal sig3 i0 i1 i2 
+ --signal 3 
+ if 2 hit_state zero 27 11 
+ if_ 0 hit_state one 8 13 
+ chg_grid_ zero i0 i1 i2 i0 i1 i2 
+ chg_grid_ zero i0 i1 i2 i0 i1 i2 
+ send_signal zero w_ u_ v_ 
+ send_signal sig3 i0 i1 i2 
+ project_update u u i0 i1 i2

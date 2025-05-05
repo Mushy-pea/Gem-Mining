@@ -1,0 +1,11 @@
+LightSwitch
+~
+w = 0 
+ u0 = 9 
+ v0 = 13 
+ u1 = 13 
+ v1 = 13 
+ signal = 2 
+ ~ 
+ --signal 1 
+ send_signal signal w u1 v1

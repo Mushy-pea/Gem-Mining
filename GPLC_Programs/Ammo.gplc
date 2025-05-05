@@ -1,0 +1,15 @@
+Ammo
+~
+w1 = 0 
+ u = 0 
+ v = 0 
+ ammo = 1 
+ add = 0 
+ v_ = 10 
+ mode = 0 
+ w0 = -1 
+ ~ 
+ --signal 1 
+ chg_ps1 ammo add v_ 
+ chg_grid mode w0 u v w0 u v 
+ chg_grid_ mode w1 u v w1 u v

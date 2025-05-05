@@ -1,0 +1,11 @@
+InitialScript3
+~
+w = 0 
+ u = 3 
+ v = 3 
+ sig128 = 128 
+ cp_u = 14 
+ cp_v = 14 
+ ~ 
+ --signal 1 
+ send_signal sig128 w cp_u cp_v

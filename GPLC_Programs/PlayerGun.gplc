@@ -1,0 +1,61 @@
+PlayerGun
+~
+w = 0 
+ u = 0 
+ v = 1 
+ v_ = 1 
+ sig2 = 2 
+ sig3 = 3 
+ sig4 = 4 
+ pos_u = 0 
+ pos_v = 0 
+ pos_w = 0 
+ vel_u = 0 
+ vel_v = 0 
+ vel_w = 0 
+ angle = 0 
+ rend_mode = 0 
+ game_t = 0 
+ torch_t0 = 0 
+ torch_t_limit = 0 
+ health = 0 
+ ammo = 0 
+ gems = 0 
+ torches = 0 
+ key0 = 0 
+ key1 = 0 
+ key2 = 0 
+ key3 = 0 
+ key4 = 0 
+ key5 = 0 
+ player_class = 0 
+ zero = 0 
+ speed = 200000 
+ copy = 2 
+ v_limit = 10 
+ msg_length0 = 8 
+ msg_length1 = 2 
+ game_t' = -5 
+ obj_flag = 8499 
+ obj_flag_base = 8500 
+ w_ = -1 
+ v__ = 0 
+ ~ 
+ --signal 2 
+ copy_ps0 pos_u w u v 
+ copy_ps1 health w u v 
+ chg_value v_ zero v w u v 
+ chg_value v__ zero v w u v 
+ chg_value obj_flag zero v w u v 
+ send_signal sig3 w u v 
+ --signal 3 
+ if 2 ammo zero 52 10 
+ if_ 2 v_ v_limit 19 27 
+ chg_value v_ v copy w u v 
+ chg_value obj_flag v obj_flag_base w u v 
+ send_signal sig3 w u v 
+ chg_ps1 v copy v 
+ project_init pos_u pos_v pos_w angle speed w v u w u v_ 99 obj_flag 
+ send_signal sig2 w u v_ 
+ pass_msg 4 msg_length1 2 15 
+ pass_msg 10 msg_length0 0 14 41 63 27 39 39 41

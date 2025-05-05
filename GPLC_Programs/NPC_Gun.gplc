@@ -1,0 +1,32 @@
+NPC_Gun
+~
+w = 2 
+ u = 0 
+ v = 17 
+ u_ = 1 
+ v_ = 16 
+ u_limit = 11 
+ zero = 0 
+ one = 1 
+ obj_flag = 8600 
+ obj_flag_base = 8600 
+ fb_w = 0 
+ fb_u = 0 
+ fb_v = 0 
+ fb_angle = 0 
+ fb_speed = 100000 
+ msg_length = 2 
+ sig2 = 2 
+ ~ 
+ --signal 2 
+ if 0 u_ u_limit 37 37 
+ project_init fb_u fb_v fb_w fb_angle fb_speed w u v_ w u_ v 106 obj_flag 
+ send_signal sig2 w u_ v 
+ pass_msg 4 msg_length 2 15 
+ chg_value u_ one one w u v 
+ chg_value obj_flag one obj_flag_base w u v 
+ project_init fb_u fb_v fb_w fb_angle fb_speed w u v_ w u_ v 106 obj_flag 
+ send_signal sig2 w u_ v 
+ pass_msg 4 msg_length 2 15 
+ chg_value u_ zero one w u v 
+ chg_value obj_flag zero one w u v
