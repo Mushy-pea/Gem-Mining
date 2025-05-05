@@ -1,0 +1,18 @@
+InitialScript
+~
+w = 0 
+ u = 24 
+ v = 24 
+ lightU1 = 7 
+ lightU2 = 42 
+ lightV1 = 7 
+ lightV2 = 42 
+ sig6 = 6 
+ remove = 0 
+ ~ 
+ --signal 1 
+ send_signal sig6 w lightU1 lightV1 
+ send_signal sig6 w lightU1 lightV2 
+ send_signal sig6 w lightU2 lightV1 
+ send_signal sig6 w lightU2 lightV2 
+ chg_grid_ remove w u v w u v

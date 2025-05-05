@@ -1,6 +1,0 @@
-InterMapPortal
-~
-msg_length = 2 
- ~ 
- --signal 1 
- pass_msg 4 msg_length -5 2
