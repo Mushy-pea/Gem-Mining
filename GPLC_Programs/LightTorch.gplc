@@ -24,6 +24,7 @@ w = 0
  ps_18 = 0 
  ps_19 = 0 
  ps_20 = 0 
+ player_class = 0 
  torch_t_limit = 2400 
  sig3 = 3 
  sig4 = 4 

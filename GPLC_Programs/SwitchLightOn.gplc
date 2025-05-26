@@ -1,0 +1,15 @@
+SwitchLightOn
+~
+w = 0 
+ u = 0 
+ v = 0 
+ targetU = 0 
+ targetV = 0 
+ sig2 = 2 
+ sig4 = 4 
+ ~ 
+ --signal 1 
+ send_signal sig2 w targetU targetV 
+ send_signal sig2 w u v 
+ --signal 2 
+ send_signal sig4 w targetU targetV

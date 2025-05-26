@@ -1,0 +1,11 @@
+SwitchLightOff
+~
+w = 0 
+ u = 0 
+ v = 0 
+ targetU = 0 
+ targetV = 0 
+ sig3 = 3 
+ ~ 
+ --signal 1 
+ send_signal sig3 w targetU targetV

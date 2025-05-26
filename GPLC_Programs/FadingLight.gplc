@@ -1,0 +1,60 @@
+FadingLight
+~
+w = 0 
+ u = 0 
+ v = 0 
+ U = 0 
+ V = 0 
+ W = 0 
+ red = 0 
+ green = 0 
+ blue = 0 
+ on = 0 
+ fadeIn = 0 
+ fadeOut = 0 
+ set = 1 
+ off = 0 
+ add = 0 
+ subtract = 2 
+ sig4 = 4 
+ sig5 = 5 
+ sig6 = 6 
+ componentGradient = 100000 
+ componentLimit = 500000 
+ ~ 
+ --signal 2 
+ chg_value on set set w u v 
+ chg_value fadeIn set set w u v 
+ --signal 3 
+ chg_value fadeOut set set w u v 
+ --signal 4 
+ if 0 on set 12 2 
+ place_light red green blue U V W 
+ send_signal sig5 w u v 
+ do_nothing 0 
+ --signal 5 
+ if 0 fadeIn set 58 12 
+ if_ 0 red componentLimit 19 33 
+ chg_value fadeIn set off w u v 
+ place_light red green blue U V W 
+ send_signal sig6 w u v 
+ chg_value red add componentGradient w u v 
+ chg_value green add componentGradient w u v 
+ chg_value blue add componentGradient w u v 
+ place_light red green blue U V W 
+ send_signal sig6 w u v 
+ place_light red green blue U V W 
+ send_signal sig6 w u v 
+ --signal 6 
+ if 2 red off 51 19 
+ if_ 0 fadeOut set 33 12 
+ chg_value red subtract componentGradient w u v 
+ chg_value green subtract componentGradient w u v 
+ chg_value blue subtract componentGradient w u v 
+ place_light red green blue U V W 
+ send_signal sig4 w u v 
+ place_light red green blue U V W 
+ send_signal sig4 w u v 
+ chg_value on set off w u v 
+ chg_value fadeOut set off w u v 
+ send_signal sig4 w u v

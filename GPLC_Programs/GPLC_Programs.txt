@@ -1,6 +1,7 @@
+InitialScript
 LightTorch
 PlayerGun
-MapTransition1
-MapTransition2
-MultiColourLight
-InitialScript
+BulletPrototype
+SwitchLightOn
+SwitchLightOff
+FadingLight
