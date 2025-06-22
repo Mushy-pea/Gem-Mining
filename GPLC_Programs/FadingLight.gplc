@@ -19,12 +19,13 @@ w = 0
  sig4 = 4 
  sig5 = 5 
  sig6 = 6 
- componentGradient = 100000 
+ componentGradient = 50000 
  componentLimit = 500000 
  ~ 
  --signal 2 
  chg_value on set set w u v 
  chg_value fadeIn set set w u v 
+ send_signal sig4 w u v 
  --signal 3 
  chg_value fadeOut set set w u v 
  --signal 4 

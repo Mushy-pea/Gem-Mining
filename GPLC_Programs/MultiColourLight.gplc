@@ -1,0 +1,45 @@
+MultiColourLight
+~
+w = 2 
+ u = 24 
+ v = 24 
+ w1 = -3 
+ red = 500000 
+ green = 500000 
+ blue = 500000 
+ U = 24500000 
+ V = 24500000 
+ W = 2500000 
+ set = 1 
+ on = 500000 
+ off = 0 
+ sig6 = 6 
+ texture = 9 
+ redLight = 1 
+ greenLight = 2 
+ blueLight = 3 
+ whiteLight = 4 
+ ~ 
+ --signal 2 
+ chg_value red set on w u v 
+ chg_value green set off w u v 
+ chg_value blue set off w u v 
+ chg_state texture set redLight w1 u v w1 u v 
+ --signal 3 
+ chg_value red set off w u v 
+ chg_value green set on w u v 
+ chg_value blue set off w u v 
+ chg_state texture set greenLight w1 u v w1 u v 
+ --signal 4 
+ chg_value red set off w u v 
+ chg_value green set off w u v 
+ chg_value blue set on w u v 
+ chg_state texture set blueLight w1 u v w1 u v 
+ --signal 5 
+ chg_value red set on w u v 
+ chg_value green set on w u v 
+ chg_value blue set on w u v 
+ chg_state texture set whiteLight w1 u v w1 u v 
+ --signal 6 
+ place_light red green blue U V W 
+ send_signal sig6 w u v

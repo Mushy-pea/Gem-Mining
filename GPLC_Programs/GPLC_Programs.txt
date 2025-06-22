@@ -5,3 +5,6 @@ BulletPrototype
 SwitchLightOn
 SwitchLightOff
 FadingLight
+MultiColourLight
+LightController
+AreaLight

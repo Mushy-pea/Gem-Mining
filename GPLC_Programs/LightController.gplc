@@ -1,0 +1,82 @@
+LightController
+~
+w = 0 
+ u = 0 
+ v = 49 
+ posU = 0 
+ posV = 0 
+ posW = 0 
+ velU = 0 
+ velV = 0 
+ velW = 0 
+ angle = 0 
+ rendMode = 0 
+ gameClock = 0 
+ torchT0 = 0 
+ torchTLimit = 0 
+ lastQuadrant = 0 
+ currentQuadrant = 0 
+ zero = 0 
+ one = 1 
+ two = 2 
+ three = 3 
+ four = 4 
+ five = 5 
+ six = 6 
+ seven = 7 
+ quadrantBound = 25000000 
+ set = 1 
+ lowLightTarget = 12 
+ highLightTarget = 37 
+ msg_length = 12 
+ ~ 
+ --signal 2 
+ copy_ps0 posU w u v 
+ send_signal three w u v 
+ --signal 3 
+ if 1 posU quadrantBound 30 30 
+ if_ 1 posV quadrantBound 12 12 
+ chg_value currentQuadrant set zero w u v 
+ send_signal four w u v 
+ chg_value currentQuadrant set three w u v 
+ send_signal four w u v 
+ if_ 1 posV quadrantBound 12 12 
+ chg_value currentQuadrant set one w u v 
+ send_signal four w u v 
+ chg_value currentQuadrant set two w u v 
+ send_signal four w u v 
+ --signal 4 
+ if 0 currentQuadrant lastQuadrant 5 5 
+ send_signal two w u v 
+ send_signal five w u v 
+ --signal 5 
+ if 1 lastQuadrant two 26 26 
+ if_ 0 lastQuadrant zero 10 10 
+ send_signal three w lowLightTarget lowLightTarget 
+ send_signal six w u v 
+ send_signal three w highLightTarget lowLightTarget 
+ send_signal six w u v 
+ if_ 0 lastQuadrant two 10 10 
+ send_signal three w highLightTarget highLightTarget 
+ send_signal six w u v 
+ send_signal three w lowLightTarget highLightTarget 
+ send_signal six w u v 
+ --signal 6 
+ if 1 currentQuadrant two 54 54 
+ if_ 0 currentQuadrant zero 24 24 
+ pass_msg 14 msg_length 0 17 47 27 30 44 27 40 46 69 63 53 
+ send_signal two w lowLightTarget lowLightTarget 
+ send_signal seven w u v 
+ pass_msg 14 msg_length 0 17 47 27 30 44 27 40 46 69 63 54 
+ send_signal two w highLightTarget lowLightTarget 
+ send_signal seven w u v 
+ if_ 0 currentQuadrant two 24 24 
+ pass_msg 14 msg_length 0 17 47 27 30 44 27 40 46 69 63 55 
+ send_signal two w highLightTarget highLightTarget 
+ send_signal seven w u v 
+ pass_msg 14 msg_length 0 17 47 27 30 44 27 40 46 69 63 56 
+ send_signal two w lowLightTarget highLightTarget 
+ send_signal seven w u v 
+ --signal 7 
+ chg_value lastQuadrant set currentQuadrant w u v 
+ send_signal two w u v

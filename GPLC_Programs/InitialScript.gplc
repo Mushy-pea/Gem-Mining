@@ -3,11 +3,14 @@ InitialScript
 w = 0 
  u = 24 
  v = 24 
- torches = 3 
- add = 0 
- three = 3 
- remove = 0 
+ zero = 0 
+ two = 2 
+ targetU1 = 24 
+ targetV1 = 24 
+ targetU2 = 0 
+ targetV2 = 49 
  ~ 
  --signal 1 
- chg_ps1 torches add three 
- chg_grid_ remove w u v w u v
+ send_signal two two targetU1 targetV1 
+ send_signal two zero targetU2 targetV2 
+ chg_grid_ zero w u v w u v
