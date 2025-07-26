@@ -1,0 +1,11 @@
+This path selects Sarah Shields
+
+Role: Mining Operations Planning
+Colour: Light blue with black
+Max health: 80
+Able to jump: Yes
+
+Do you wish to play Sarah?
+
+Play
+Cancel
