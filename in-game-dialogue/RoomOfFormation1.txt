@@ -1,0 +1,11 @@
+-1 00/Room of formation
+-1 00/ 
+-1 00/Please choose the level of danger.  At higher
+-1 00/danger levels enemies and traps will deal more
+-1 00/damage and some useful items will be more
+-1 00/scarce.
+-1 00/ 
+-1 01/Hey, not too risky!
+-1 02/Plenty of danger please.
+-1 03/Ultra danger
+-1 04/Health and safety nightmare!

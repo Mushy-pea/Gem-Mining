@@ -1,0 +1,9 @@
+-1 00/Room of formation
+-1 00/ 
+-1 00/Your next choice is which character you wish to
+-1 00/play.  Trying to exit the room through each of
+-1 00/the doors will give you information about the
+-1 00/corresponding character.  You can then confirm
+-1 00/or cancel your choice.
+-1 00/ 
+-1 01/Continue

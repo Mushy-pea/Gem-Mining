@@ -1,9 +1,0 @@
-Room of formation
-
-Your first choice is which character you wish to
-play.  Trying to exit the room through each of
-the doors will give you information about the
-corresponding character.  You can then confirm
-or cancel your choice.
-
-Continue

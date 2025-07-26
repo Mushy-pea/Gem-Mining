@@ -1,8 +1,8 @@
 InitialScript
 SelectBenDavies
+SelectSarahShields
 LightTorch
 PlayerGun
 BulletPrototype
-MultiColourLight
 LightController
 AreaLight

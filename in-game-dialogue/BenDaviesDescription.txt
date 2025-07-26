@@ -4,7 +4,7 @@
 -1 00/Colour: White with dark blue
 -1 00/Max health: 100
 -1 00/Able to jump: No
--1 00/ 
+-1 00/  
 -1 00/Do you wish to play Ben?
 -1 00/ 
 -1 01/Play
