@@ -20,7 +20,7 @@ w = 0
  --signal 1 
  send_signal two two targetU1 targetV1 
  send_signal two zero targetU2 targetV2 
- pass_msg 269 msgLength0 01 00 24 24 -1 00 18 41 41 39 63 41 32 
+ pass_msg 269 msgLength0 04 00 24 24 -1 00 18 41 41 39 63 41 32 
  63 32 41 44 39 27 46 35 41 40 -1 00 63 -1 00 16 
  38 31 27 45 31 63 29 34 41 41 45 31 63 46 34 31 
  63 38 31 48 31 38 63 41 32 63 30 27 40 33 31 44 
@@ -50,7 +50,7 @@ w = 0
  chg_ps1 nightmare zero zero 
  send_signal six w u v 
  --signal 6 
- pass_msg 257 msgLength1 01 00 24 24 -1 00 18 41 41 39 63 41 32 
+ pass_msg 257 msgLength1 04 00 24 24 -1 00 18 41 41 39 63 41 32 
  63 32 41 44 39 27 46 35 41 40 -1 00 63 -1 00 25 
  41 47 44 63 40 31 50 46 63 29 34 41 35 29 31 63 
  35 45 63 49 34 35 29 34 63 29 34 27 44 27 29 46 
