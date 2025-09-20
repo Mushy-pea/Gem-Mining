@@ -6,3 +6,4 @@ PlayerGun
 BulletPrototype
 LightController
 AreaLight
+CombinationLockInitialiser

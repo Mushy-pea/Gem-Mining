@@ -1,0 +1,136 @@
+InitialiseCombinationLock
+~
+w = 0 
+ u = 49 
+ v = 49 
+ probFac2 = 50 
+ probFac3 = 33 
+ probFac4 = 25 
+ probFac5 = 20 
+ probFac6 = 17 
+ zero = 0 
+ num1 = 1 
+ num2 = 2 
+ num3 = 3 
+ num4 = 4 
+ num5 = 5 
+ num6 = 6 
+ num7 = 7 
+ num8 = 8 
+ num9 = 9 
+ num10 = 10 
+ num11 = 11 
+ num12 = 12 
+ num13 = 13 
+ num14 = 14 
+ result0* = 0 
+ result1 = 0 
+ result2 = 0 
+ result3 = 0 
+ result4 = 0 
+ result5 = 0 
+ diceArray0* = 0 
+ diceArray1 = 0 
+ diceArray2 = 0 
+ diceArray3 = 0 
+ diceArray4 = 0 
+ diceArray5 = 1 
+ diceArray6* = 0 
+ diceArray7 = 0 
+ diceArray8 = 0 
+ diceArray9 = 0 
+ diceArray10 = 1 
+ diceArray11* = 0 
+ diceArray12 = 0 
+ diceArray13 = 0 
+ diceArray14 = 1 
+ diceArray15* = 0 
+ diceArray16 = 0 
+ diceArray17 = 1 
+ diceArray18* = 0 
+ diceArray19 = 1 
+ nodeTable0* = 1 
+ nodeTable1 = 2 
+ nodeTable2 = 3 
+ nodeTable3 = 4 
+ nodeTable4 = 5 
+ nodeTable5 = 6 
+ nodeTable*0 = 49 
+ nodeTable**0 = 508 
+ stage = 5 
+ ~ 
+ --signal 2 
+ binary_dice probFac6 zero w u v diceArray0* 
+ binary_dice probFac6 num1 w u v diceArray1 
+ binary_dice probFac6 num2 w u v diceArray2 
+ binary_dice probFac6 num3 w u v diceArray3 
+ binary_dice probFac6 num4 w u v diceArray4 
+ binary_dice probFac5 num5 w u v diceArray6* 
+ binary_dice probFac5 num6 w u v diceArray7 
+ binary_dice probFac5 num7 w u v diceArray8 
+ binary_dice probFac5 num8 w u v diceArray9 
+ binary_dice probFac4 num9 w u v diceArray11* 
+ binary_dice probFac4 num10 w u v diceArray12 
+ binary_dice probFac4 num11 w u v diceArray13 
+ binary_dice probFac3 num12 w u v diceArray15* 
+ binary_dice probFac3 num13 w u v diceArray16 
+ binary_dice probFac2 num14 w u v diceArray18* 
+ send_signal num4 w u v 
+ --signal 3 
+ if 2 nodeTable0* zero 54 26 
+ chg_value result0* num1 nodeTable0* w u v 
+ chg_value nodeTable0* num1 zero w u v 
+ chg_value_ 147 zero num1 w u v 
+ chg_value_ 142 num1 nodeTable*0 w u v 
+ chg_value_ 149 num1 nodeTable*0 w u v 
+ chg_value_ 154 num1 nodeTable**0 w u v 
+ chg_value stage zero num1 w u v 
+ send_signal stage w u v 
+ chg_value_ 142 zero num1 w u v 
+ chg_value_ 149 zero num1 w u v 
+ chg_value_ 154 zero num1 w u v 
+ send_signal num3 w u v 
+ --signal 4 
+ if 0 diceArray0* zero 33 5 
+ chg_value_ 228 zero num1 w u v 
+ chg_value_ 142 zero num1 w u v 
+ chg_value_ 149 zero num1 w u v 
+ chg_value_ 154 zero num1 w u v 
+ send_signal num4 w u v 
+ send_signal num3 w u v 
+ --signal 5 
+ if 0 diceArray6* zero 33 5 
+ chg_value_ 272 zero num1 w u v 
+ chg_value_ 142 zero num1 w u v 
+ chg_value_ 149 zero num1 w u v 
+ chg_value_ 154 zero num1 w u v 
+ send_signal num5 w u v 
+ send_signal num3 w u v 
+ --signal 6 
+ if 0 diceArray11* zero 33 5 
+ chg_value_ 316 zero num1 w u v 
+ chg_value_ 142 zero num1 w u v 
+ chg_value_ 149 zero num1 w u v 
+ chg_value_ 154 zero num1 w u v 
+ send_signal num6 w u v 
+ send_signal num3 w u v 
+ --signal 7 
+ if 0 diceArray15* zero 33 5 
+ chg_value_ 360 zero num1 w u v 
+ chg_value_ 142 zero num1 w u v 
+ chg_value_ 149 zero num1 w u v 
+ chg_value_ 154 zero num1 w u v 
+ send_signal num7 w u v 
+ send_signal num3 w u v 
+ --signal 8 
+ if 0 diceArray18* zero 33 5 
+ chg_value_ 404 zero num1 w u v 
+ chg_value_ 142 zero num1 w u v 
+ chg_value_ 149 zero num1 w u v 
+ chg_value_ 154 zero num1 w u v 
+ send_signal num8 w u v 
+ send_signal num3 w u v 
+ --signal 9 
+ send_signal num3 w u v 
+ --signal 10 
+ chg_value stage zero num1 w u v
