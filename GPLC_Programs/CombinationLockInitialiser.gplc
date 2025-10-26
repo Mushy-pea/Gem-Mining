@@ -58,6 +58,8 @@ w = 0
  nodeTable*0 = 49 
  nodeTable**0 = 508 
  stage = 5 
+ u1 = 16 
+ v1 = 16 
  ~ 
  --signal 2 
  binary_dice probFac6 zero w u v diceArray0* 
@@ -78,7 +80,7 @@ w = 0
  send_signal num4 w u v 
  --signal 3 
  if 2 nodeTable0* zero 54 26 
- chg_value result0* num1 nodeTable0* w u v 
+ chg_value_ 145 num1 nodeTable0* w u1 v1 
  chg_value nodeTable0* num1 zero w u v 
  chg_value_ 147 zero num1 w u v 
  chg_value_ 142 num1 nodeTable*0 w u v 

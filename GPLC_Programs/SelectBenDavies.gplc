@@ -3,12 +3,14 @@ SelectBenDavies
 w = 0 
  u = 22 
  v = 20 
+ v1 = 28 
  msgLength0 = 184 
  msgLength1 = 29 
  benDavies = 1 
  health = 0 
  set = 1 
  baseHealth = 100 
+ remove = 0 
  ~ 
  --signal 1 
  pass_msg 186 msgLength0 04 00 22 20 -1 00 20 34 35 45 63 42 27 
@@ -26,5 +28,7 @@ w = 0
  --signal 2 
  set_player_class benDavies 
  chg_ps1 health set baseHealth 
+ chg_grid_ remove w u v w u v 
+ chg_grid_ remove w u v1 w u v1 
  pass_msg 31 msgLength1 00 25 41 47 63 34 27 48 31 63 29 34 41 
  45 31 40 63 02 31 40 65 45 63 45 46 41 44 51 00

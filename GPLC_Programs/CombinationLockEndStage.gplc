@@ -1,0 +1,107 @@
+CombinationLockStage
+~
+w = 0 
+ u = 17 
+ v = 16 
+ u1 = 18 
+ v1 = 16 
+ u2 = 16 
+ v2 = 16 
+ zero = 0 
+ num1 = 1 
+ num2 = 2 
+ num3 = 3 
+ num4 = 4 
+ num5 = 5 
+ num6 = 6 
+ num8 = 8 
+ num9 = 9 
+ num10 = 10 
+ num16 = 16 
+ num32 = 32 
+ msgLength = 59 
+ c = 0 
+ buttonArray0* = 0 
+ buttonArray1 = 0 
+ buttonArray2 = 0 
+ buttonArray3 = 0 
+ buttonArray4 = 0 
+ buttonArray5 = 0 
+ buttonIndex = 5 
+ attemptedCodeTarget = 151 
+ ~ 
+ --signal 2 
+ chg_value_ 534 num1 num32 w u1 v1 
+ chg_value_ 535 num1 buttonArray1 w u1 v1 
+ chg_value_ 536 num1 buttonArray2 w u1 v1 
+ chg_value_ 537 num1 buttonArray3 w u1 v1 
+ chg_value_ 538 num1 buttonArray4 w u1 v1 
+ chg_value_ 539 num1 buttonArray5 w u1 v1 
+ chg_value_ 0 num1 num1 w u2 v2 
+ send_signal num9 w u2 v2 
+ --signal 3 
+ chg_value_ 535 num1 num16 w u1 v1 
+ chg_value_ 534 num1 buttonArray0* w u1 v1 
+ chg_value_ 536 num1 buttonArray2 w u1 v1 
+ chg_value_ 537 num1 buttonArray3 w u1 v1 
+ chg_value_ 538 num1 buttonArray4 w u1 v1 
+ chg_value_ 539 num1 buttonArray5 w u1 v1 
+ chg_value_ 0 num1 num2 w u2 v2 
+ send_signal num9 w u2 v2 
+ --signal 4 
+ chg_value_ 536 num1 num8 w u1 v1 
+ chg_value_ 534 num1 buttonArray0* w u1 v1 
+ chg_value_ 535 num1 buttonArray1 w u1 v1 
+ chg_value_ 537 num1 buttonArray3 w u1 v1 
+ chg_value_ 538 num1 buttonArray4 w u1 v1 
+ chg_value_ 539 num1 buttonArray5 w u1 v1 
+ chg_value_ 0 num1 num3 w u2 v2 
+ send_signal num9 w u2 v2 
+ --signal 5 
+ chg_value_ 537 num1 num4 w u1 v1 
+ chg_value_ 534 num1 buttonArray0* w u1 v1 
+ chg_value_ 535 num1 buttonArray1 w u1 v1 
+ chg_value_ 536 num1 buttonArray2 w u1 v1 
+ chg_value_ 538 num1 buttonArray4 w u1 v1 
+ chg_value_ 539 num1 buttonArray5 w u1 v1 
+ chg_value_ 0 num1 num4 w u2 v2 
+ send_signal num9 w u2 v2 
+ --signal 6 
+ chg_value_ 538 num1 num2 w u1 v1 
+ chg_value_ 534 num1 buttonArray0* w u1 v1 
+ chg_value_ 535 num1 buttonArray1 w u1 v1 
+ chg_value_ 536 num1 buttonArray2 w u1 v1 
+ chg_value_ 537 num1 buttonArray3 w u1 v1 
+ chg_value_ 539 num1 buttonArray5 w u1 v1 
+ chg_value_ 0 num1 num5 w u2 v2 
+ send_signal num9 w u2 v2 
+ --signal 7 
+ chg_value_ 539 num1 num1 w u1 v1 
+ chg_value_ 534 num1 buttonArray0* w u1 v1 
+ chg_value_ 535 num1 buttonArray1 w u1 v1 
+ chg_value_ 536 num1 buttonArray2 w u1 v1 
+ chg_value_ 537 num1 buttonArray3 w u1 v1 
+ chg_value_ 538 num1 buttonArray4 w u1 v1 
+ chg_value_ 0 num1 num6 w u2 v2 
+ send_signal num9 w u2 v2 
+ --signal 9 
+ if 0 c num6 26 26 
+ chg_value_ 453 num1 buttonIndex w u v 
+ chg_value_ 455 num1 u w u v 
+ chg_value_ 456 num1 v w u v 
+ send_signal num10 w u v 
+ chg_value buttonIndex zero buttonArray0* w u v 
+ chg_value c zero num1 w u v 
+ chg_value_ 386 zero num1 w u v 
+ send_signal num9 w u v 
+ --signal 10 
+ chg_value_ 70 num1 attemptedCodeTarget w u v 
+ chg_value_ 124 num1 attemptedCodeTarget w u v 
+ chg_value_ 178 num1 attemptedCodeTarget w u v 
+ chg_value_ 232 num1 attemptedCodeTarget w u v 
+ chg_value_ 286 num1 attemptedCodeTarget w u v 
+ chg_value_ 340 num1 attemptedCodeTarget w u v 
+ pass_msg 61 msgLength 04 00 17 16 -1 00 20 34 35 45 63 35 45 
+ 63 27 63 29 41 39 28 35 40 27 46 35 41 40 63 38 
+ 41 29 37 -1 00 63 -1 01 54 -1 02 55 -1 03 56 -1 
+ 04 57 -1 05 58 -1 06 59 -1 07 05 50 35 46

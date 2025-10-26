@@ -7,3 +7,7 @@ BulletPrototype
 LightController
 AreaLight
 CombinationLockInitialiser
+CombinationLock
+CombinationLockStage
+CombinationLockEndStage
+SarahShields
