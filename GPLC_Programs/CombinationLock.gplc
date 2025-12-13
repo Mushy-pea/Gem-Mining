@@ -35,8 +35,8 @@ w = 0
  -1 01 15 11 
  if_ 0 secretCode0* attemptedCode0* 26 45 
  chg_value c num0 num1 w u v 
- chg_value_ 57 num0 num1 w u v 
- chg_value_ 58 num0 num1 w u v 
+ chg_value_ 57.secretCode0* num0 num1 w u v 
+ chg_value_ 58.attemptedCode0* num0 num1 w u v 
  send_signal num9 w u v 
  pass_msg 45 msgLength1 69 00 16 16 -1 00 09 40 29 41 44 44 31 
  29 46 63 29 41 39 28 35 40 27 46 35 41 40 63 31 

@@ -31,76 +31,76 @@ w = 0
  attemptedCodeTarget = 151 
  ~ 
  --signal 2 
- chg_value_ 534 num1 num32 w u1 v1 
- chg_value_ 535 num1 buttonArray1 w u1 v1 
- chg_value_ 536 num1 buttonArray2 w u1 v1 
- chg_value_ 537 num1 buttonArray3 w u1 v1 
- chg_value_ 538 num1 buttonArray4 w u1 v1 
- chg_value_ 539 num1 buttonArray5 w u1 v1 
- chg_value_ 0 num1 num1 w u2 v2 
+ chg_value_ 534.buttonArray0* num1 num32 w u1 v1 
+ chg_value_ 535.buttonArray1 num1 buttonArray1 w u1 v1 
+ chg_value_ 536.buttonArray2 num1 buttonArray2 w u1 v1 
+ chg_value_ 537.buttonArray3 num1 buttonArray3 w u1 v1 
+ chg_value_ 538.buttonArray4 num1 buttonArray4 w u1 v1 
+ chg_value_ 539.buttonArray5 num1 buttonArray5 w u1 v1 
+ chg_value_ 0.CombinationLock.attemptedCodeX num1 num1 w u2 v2 
  send_signal num9 w u1 v1 
  --signal 3 
- chg_value_ 535 num1 num16 w u1 v1 
- chg_value_ 534 num1 buttonArray0* w u1 v1 
- chg_value_ 536 num1 buttonArray2 w u1 v1 
- chg_value_ 537 num1 buttonArray3 w u1 v1 
- chg_value_ 538 num1 buttonArray4 w u1 v1 
- chg_value_ 539 num1 buttonArray5 w u1 v1 
- chg_value_ 0 num1 num2 w u2 v2 
+ chg_value_ 535.buttonArray1 num1 num16 w u1 v1 
+ chg_value_ 534.buttonArray0* num1 buttonArray0* w u1 v1 
+ chg_value_ 536.buttonArray2 num1 buttonArray2 w u1 v1 
+ chg_value_ 537.buttonArray3 num1 buttonArray3 w u1 v1 
+ chg_value_ 538.buttonArray4 num1 buttonArray4 w u1 v1 
+ chg_value_ 539.buttonArray5 num1 buttonArray5 w u1 v1 
+ chg_value_ 0.CombinationLock.attemptedCodeX num1 num2 w u2 v2 
  send_signal num9 w u1 v1 
  --signal 4 
- chg_value_ 536 num1 num8 w u1 v1 
- chg_value_ 534 num1 buttonArray0* w u1 v1 
- chg_value_ 535 num1 buttonArray1 w u1 v1 
- chg_value_ 537 num1 buttonArray3 w u1 v1 
- chg_value_ 538 num1 buttonArray4 w u1 v1 
- chg_value_ 539 num1 buttonArray5 w u1 v1 
- chg_value_ 0 num1 num3 w u2 v2 
+ chg_value_ 536.buttonArray2 num1 num8 w u1 v1 
+ chg_value_ 534.buttonArray0* num1 buttonArray0* w u1 v1 
+ chg_value_ 535.buttonArray1 num1 buttonArray1 w u1 v1 
+ chg_value_ 537.buttonArray3 num1 buttonArray3 w u1 v1 
+ chg_value_ 538.buttonArray4 num1 buttonArray4 w u1 v1 
+ chg_value_ 539.buttonArray5 num1 buttonArray5 w u1 v1 
+ chg_value_ 0.CombinationLock.attemptedCodeX num1 num3 w u2 v2 
  send_signal num9 w u1 v1 
  --signal 5 
- chg_value_ 537 num1 num4 w u1 v1 
- chg_value_ 534 num1 buttonArray0* w u1 v1 
- chg_value_ 535 num1 buttonArray1 w u1 v1 
- chg_value_ 536 num1 buttonArray2 w u1 v1 
- chg_value_ 538 num1 buttonArray4 w u1 v1 
- chg_value_ 539 num1 buttonArray5 w u1 v1 
- chg_value_ 0 num1 num4 w u2 v2 
+ chg_value_ 537.buttonArray3 num1 num4 w u1 v1 
+ chg_value_ 534.buttonArray0* num1 buttonArray0* w u1 v1 
+ chg_value_ 535.buttonArray1 num1 buttonArray1 w u1 v1 
+ chg_value_ 536.buttonArray2 num1 buttonArray2 w u1 v1 
+ chg_value_ 538.buttonArray4 num1 buttonArray4 w u1 v1 
+ chg_value_ 539.buttonArray5 num1 buttonArray5 w u1 v1 
+ chg_value_ 0.CombinationLock.attemptedCodeX num1 num4 w u2 v2 
  send_signal num9 w u1 v1 
  --signal 6 
- chg_value_ 538 num1 num2 w u1 v1 
- chg_value_ 534 num1 buttonArray0* w u1 v1 
- chg_value_ 535 num1 buttonArray1 w u1 v1 
- chg_value_ 536 num1 buttonArray2 w u1 v1 
- chg_value_ 537 num1 buttonArray3 w u1 v1 
- chg_value_ 539 num1 buttonArray5 w u1 v1 
- chg_value_ 0 num1 num5 w u2 v2 
+ chg_value_ 538.buttonArray4 num1 num2 w u1 v1 
+ chg_value_ 534.buttonArray0* num1 buttonArray0* w u1 v1 
+ chg_value_ 535.buttonArray1 num1 buttonArray1 w u1 v1 
+ chg_value_ 536.buttonArray2 num1 buttonArray2 w u1 v1 
+ chg_value_ 537.buttonArray3 num1 buttonArray3 w u1 v1 
+ chg_value_ 539.buttonArray5 num1 buttonArray5 w u1 v1 
+ chg_value_ 0.CombinationLock.attemptedCodeX num1 num5 w u2 v2 
  send_signal num9 w u1 v1 
  --signal 7 
- chg_value_ 539 num1 num1 w u1 v1 
- chg_value_ 534 num1 buttonArray0* w u1 v1 
- chg_value_ 535 num1 buttonArray1 w u1 v1 
- chg_value_ 536 num1 buttonArray2 w u1 v1 
- chg_value_ 537 num1 buttonArray3 w u1 v1 
- chg_value_ 538 num1 buttonArray4 w u1 v1 
- chg_value_ 0 num1 num6 w u2 v2 
+ chg_value_ 539.buttonArray5 num1 num1 w u1 v1 
+ chg_value_ 534.buttonArray0* num1 buttonArray0* w u1 v1 
+ chg_value_ 535.buttonArray1 num1 buttonArray1 w u1 v1 
+ chg_value_ 536.buttonArray2 num1 buttonArray2 w u1 v1 
+ chg_value_ 537.buttonArray3 num1 buttonArray3 w u1 v1 
+ chg_value_ 538.buttonArray4 num1 buttonArray4 w u1 v1 
+ chg_value_ 0.CombinationLock.attemptedCodeX num1 num6 w u2 v2 
  send_signal num9 w u1 v1 
  --signal 9 
  if 0 c num6 26 26 
- chg_value_ 453 num1 buttonIndex w u v 
- chg_value_ 455 num1 u w u v 
- chg_value_ 456 num1 v w u v 
+ chg_value_ 453.msgBackground num1 buttonIndex w u v 
+ chg_value_ 455.msgTargetU num1 u w u v 
+ chg_value_ 456.msgTargetV num1 v w u v 
  send_signal num10 w u v 
  chg_value buttonIndex zero buttonArray0* w u v 
  chg_value c zero num1 w u v 
- chg_value_ 386 zero num1 w u v 
+ chg_value_ 386.buttonArray0* zero num1 w u v 
  send_signal num9 w u v 
  --signal 10 
- chg_value_ 70 num1 attemptedCodeTarget w u v 
- chg_value_ 124 num1 attemptedCodeTarget w u v 
- chg_value_ 178 num1 attemptedCodeTarget w u v 
- chg_value_ 232 num1 attemptedCodeTarget w u v 
- chg_value_ 286 num1 attemptedCodeTarget w u v 
- chg_value_ 340 num1 attemptedCodeTarget w u v 
+ chg_value_ 70.CombinationLock.attemptedCodeX* num1 attemptedCodeTarget w u v 
+ chg_value_ 124.CombinationLock.attemptedCodeX* num1 attemptedCodeTarget w u v 
+ chg_value_ 178.CombinationLock.attemptedCodeX* num1 attemptedCodeTarget w u v 
+ chg_value_ 232.CombinationLock.attemptedCodeX* num1 attemptedCodeTarget w u v 
+ chg_value_ 286.CombinationLock.attemptedCodeX* num1 attemptedCodeTarget w u v 
+ chg_value_ 340.CombinationLock.attemptedCodeX* num1 attemptedCodeTarget w u v 
  pass_msg 61 msgLength 04 00 17 16 -1 00 20 34 35 45 63 35 45 
  63 27 63 29 41 39 28 35 40 27 46 35 41 40 63 38 
  41 29 37 -1 00 63 -1 01 54 -1 02 55 -1 03 56 -1 

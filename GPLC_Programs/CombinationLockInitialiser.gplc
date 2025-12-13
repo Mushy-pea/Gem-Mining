@@ -80,56 +80,56 @@ w = 0
  send_signal num4 w u v 
  --signal 3 
  if 2 nodeTable0* zero 54 26 
- chg_value_ 145 num1 nodeTable0* w u1 v1 
+ chg_value_ 145.CombinationLock.secretCode0* num1 nodeTable0* w u1 v1 
  chg_value nodeTable0* num1 zero w u v 
- chg_value_ 147 zero num1 w u v 
- chg_value_ 142 num1 nodeTable*0 w u v 
- chg_value_ 149 num1 nodeTable*0 w u v 
- chg_value_ 154 num1 nodeTable**0 w u v 
+ chg_value_ 147.CombinationLock.secretCode0** zero num1 w u v 
+ chg_value_ 142.nodeTable0* num1 nodeTable*0 w u v 
+ chg_value_ 149.nodeTable0* num1 nodeTable*0 w u v 
+ chg_value_ 154.nodeTable0* num1 nodeTable**0 w u v 
  chg_value stage zero num1 w u v 
  send_signal stage w u v 
- chg_value_ 142 zero num1 w u v 
- chg_value_ 149 zero num1 w u v 
- chg_value_ 154 zero num1 w u v 
+ chg_value_ 142.nodeTable0* zero num1 w u v 
+ chg_value_ 149.nodeTable0* zero num1 w u v 
+ chg_value_ 154.nodeTable0* zero num1 w u v 
  send_signal num3 w u v 
  --signal 4 
  if 0 diceArray0* zero 33 5 
- chg_value_ 228 zero num1 w u v 
- chg_value_ 142 zero num1 w u v 
- chg_value_ 149 zero num1 w u v 
- chg_value_ 154 zero num1 w u v 
+ chg_value_ 228.diceArray0* zero num1 w u v 
+ chg_value_ 142.nodeTable0* zero num1 w u v 
+ chg_value_ 149.nodeTable0* zero num1 w u v 
+ chg_value_ 154.nodeTable0* zero num1 w u v 
  send_signal num4 w u v 
  send_signal num3 w u v 
  --signal 5 
  if 0 diceArray6* zero 33 5 
- chg_value_ 272 zero num1 w u v 
- chg_value_ 142 zero num1 w u v 
- chg_value_ 149 zero num1 w u v 
- chg_value_ 154 zero num1 w u v 
+ chg_value_ 272.diceArray6* zero num1 w u v 
+ chg_value_ 142.nodeTable0* zero num1 w u v 
+ chg_value_ 149.nodeTable0* zero num1 w u v 
+ chg_value_ 154.nodeTable0* zero num1 w u v 
  send_signal num5 w u v 
  send_signal num3 w u v 
  --signal 6 
  if 0 diceArray11* zero 33 5 
- chg_value_ 316 zero num1 w u v 
- chg_value_ 142 zero num1 w u v 
- chg_value_ 149 zero num1 w u v 
- chg_value_ 154 zero num1 w u v 
+ chg_value_ 316.diceArray11* zero num1 w u v 
+ chg_value_ 142.nodeTable0* zero num1 w u v 
+ chg_value_ 149.nodeTable0* zero num1 w u v 
+ chg_value_ 154.nodeTable0* zero num1 w u v 
  send_signal num6 w u v 
  send_signal num3 w u v 
  --signal 7 
  if 0 diceArray15* zero 33 5 
- chg_value_ 360 zero num1 w u v 
- chg_value_ 142 zero num1 w u v 
- chg_value_ 149 zero num1 w u v 
- chg_value_ 154 zero num1 w u v 
+ chg_value_ 360.diceArray15* zero num1 w u v 
+ chg_value_ 142.nodeTable0* zero num1 w u v 
+ chg_value_ 149.nodeTable0* zero num1 w u v 
+ chg_value_ 154.nodeTable0* zero num1 w u v 
  send_signal num7 w u v 
  send_signal num3 w u v 
  --signal 8 
  if 0 diceArray18* zero 33 5 
- chg_value_ 404 zero num1 w u v 
- chg_value_ 142 zero num1 w u v 
- chg_value_ 149 zero num1 w u v 
- chg_value_ 154 zero num1 w u v 
+ chg_value_ 404.diceArray18* zero num1 w u v 
+ chg_value_ 142.nodeTable0* zero num1 w u v 
+ chg_value_ 149.nodeTable0* zero num1 w u v 
+ chg_value_ 154.nodeTable0* zero num1 w u v 
  send_signal num8 w u v 
  send_signal num3 w u v 
  --signal 9 
