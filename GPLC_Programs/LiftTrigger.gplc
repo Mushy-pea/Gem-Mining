@@ -1,0 +1,11 @@
+LiftTrigger
+~
+w = 0 
+ u = 22 
+ v = 20 
+ u1 = 25 
+ v1 = 25 
+ two = 2 
+ ~ 
+ --signal 1 
+ send_signal two w u1 v1

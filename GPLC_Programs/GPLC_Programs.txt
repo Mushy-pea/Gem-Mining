@@ -11,3 +11,5 @@ CombinationLock
 CombinationLockStage
 CombinationLockEndStage
 SarahShields
+Lift
+LiftTrigger

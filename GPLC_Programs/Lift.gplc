@@ -1,0 +1,53 @@
+Lift
+~
+w = 0 
+ u = 25 
+ v = 25 
+ w1 = 1 
+ u1 = 24 
+ v1 = 24 
+ floorU = 12 
+ floorV = 12 
+ zero = 0 
+ one = 1 
+ two = 2 
+ three = 3 
+ four = 4 
+ upSpeed = 12500 
+ downSpeed = -12500 
+ maxHeight = 1000000 
+ minHeight = 0 
+ velocity = 0 
+ height = 1000000 
+ onSwitch = 0 
+ ~ 
+ --signal 1 
+ if 0 onSwitch one 5 0 
+ send_signal two w u v 
+ do_nothing 0 
+ --signal 2 
+ if 0 velocity zero 5 0 
+ send_signal three w u v 
+ do_nothing 0 
+ --signal 3 
+ if 0 height maxHeight 19 19 
+ chg_value velocity one downSpeed w u v 
+ chg_value height zero downSpeed w u v 
+ send_signal four w u v 
+ chg_value velocity one upSpeed w u v 
+ chg_value height zero upSpeed w u v 
+ send_signal four w u v 
+ --signal 4 
+ if 2 height minHeight 76 7 
+ if_ 1 height maxHeight 63 7 
+ chg_floor zero one height w floorU floorV 
+ chg_state_ three one height w1 u v w1 u v 
+ chg_state_ three one height w1 u1 v w1 u1 v 
+ chg_state_ three one height w1 u v1 w1 u v1 
+ chg_state_ three one height w1 u1 v1 w1 u1 v1 
+ chg_value height zero velocity w u v 
+ send_signal four w u v 
+ chg_value velocity one zero w u v 
+ chg_value velocity one zero w u v 
+ --signal 5 
+ chg_value onSwitch one one w u v
