@@ -6,6 +6,8 @@ w = 0
  w1 = 1 
  u1 = 24 
  v1 = 24 
+ u2 = 22 
+ v2 = 20 
  floorU = 12 
  floorV = 12 
  zero = 0 
@@ -13,6 +15,15 @@ w = 0
  two = 2 
  three = 3 
  four = 4 
+ eight = 8 
+ nine = 9 
+ ten = 10 
+ num11 = 11 
+ num12 = 12 
+ playerAngle = 157 
+ viewAngle = 550 
+ fixedPlayerU = 25100000 
+ fixedPlayerV = 25100000 
  upSpeed = 12500 
  downSpeed = -12500 
  maxHeight = 1000000 
@@ -20,6 +31,10 @@ w = 0
  velocity = 0 
  height = 1000000 
  onSwitch = 0 
+ posU = 0 
+ posV = 0 
+ velU = 0 
+ velV = 0 
  ~ 
  --signal 1 
  if 0 onSwitch one 5 0 
@@ -30,24 +45,41 @@ w = 0
  send_signal three w u v 
  do_nothing 0 
  --signal 3 
- if 0 height maxHeight 19 19 
+ if 0 height maxHeight 47 59 
  chg_value velocity one downSpeed w u v 
  chg_value height zero downSpeed w u v 
+ chg_value posU one zero w u v 
+ chg_value posV one zero w u v 
+ chg_value velU one zero w u v 
+ chg_value velV one zero w u v 
  send_signal four w u v 
  chg_value velocity one upSpeed w u v 
  chg_value height zero upSpeed w u v 
+ chg_value posU one two w u v 
+ chg_value posV one three w u v 
+ chg_value velU one num11 w u v 
+ chg_value velV one num12 w u v 
+ chg_ps0 eight one playerAngle 
+ chg_ps0 nine one one 
+ chg_ps0 ten one viewAngle 
  send_signal four w u v 
  --signal 4 
- if 2 height minHeight 76 7 
- if_ 1 height maxHeight 63 7 
+ if 2 height minHeight 101 7 
+ if_ 1 height maxHeight 79 16 
  chg_floor zero one height w floorU floorV 
  chg_state_ three one height w1 u v w1 u v 
  chg_state_ three one height w1 u1 v w1 u1 v 
  chg_state_ three one height w1 u v1 w1 u v1 
  chg_state_ three one height w1 u1 v1 w1 u1 v1 
  chg_value height zero velocity w u v 
+ chg_ps0 posU one fixedPlayerU 
+ chg_ps0 posV one fixedPlayerV 
+ chg_ps0 velU one zero 
+ chg_ps0 velV one zero 
  send_signal four w u v 
  chg_value velocity one zero w u v 
+ chg_ps0 nine one zero 
+ send_signal two w u2 v2 
  chg_value velocity one zero w u v 
  --signal 5 
  chg_value onSwitch one one w u v
