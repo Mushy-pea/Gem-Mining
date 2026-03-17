@@ -4,6 +4,7 @@ w = 0
  u = 24 
  v = 24 
  zero = 0 
+ one = 1 
  two = 2 
  six = 6 
  notTooRisky = 5 
@@ -14,12 +15,20 @@ w = 0
  targetV1 = 24 
  targetU2 = 0 
  targetV2 = 49 
+ targetU3 = 24 
+ targetV3 = 0 
+ targetU4 = 49 
+ targetV4 = 24 
+ targetU5 = 24 
+ targetV5 = 49 
  msgLength0 = 267 
  msgLength1 = 255 
  ~ 
  --signal 1 
  send_signal two two targetU1 targetV1 
  send_signal two zero targetU2 targetV2 
+ send_signal two one targetU3 targetV3 
+ send_signal two one targetU4 targetV4 
  pass_msg 269 msgLength0 04 00 24 24 -1 00 18 41 41 39 63 41 32 
  63 32 41 44 39 27 46 35 41 40 -1 00 63 -1 00 16 
  38 31 27 45 31 63 29 34 41 41 45 31 63 46 34 31 

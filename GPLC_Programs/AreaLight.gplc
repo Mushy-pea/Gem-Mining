@@ -3,15 +3,17 @@ AreaLight
 w = 0 
  u = 0 
  v = 0 
- intensity = 500000 
  U = 0 
  V = 0 
  W = 0 
+ redIntensity = 0 
+ greenIntensity = 0 
+ blueIntensity = 0 
  set = 1 
- switch = 0 
  on = 1 
  off = 0 
  four = 4 
+ switch = 0 
  ~ 
  --signal 2 
  chg_value switch set on w u v 
@@ -20,6 +22,6 @@ w = 0
  chg_value switch set off w u v 
  --signal 4 
  if 0 switch on 12 0 
- place_light intensity intensity intensity U V W 
+ place_light redIntensity greenIntensity blueIntensity U V W 
  send_signal four w u v 
  do_nothing 0
