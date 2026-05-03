@@ -1,0 +1,9 @@
+Blocker
+~
+w = 0 
+ u = 0 
+ v = 0 
+ three = 3 
+ ~ 
+ --signal 2 
+ send_signal three w u v

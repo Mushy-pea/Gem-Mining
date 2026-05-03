@@ -1,0 +1,85 @@
+AlertLight
+~
+w = 0 
+ u = 0 
+ v = 0 
+ U = 0 
+ V = 0 
+ W = 0 
+ negativeOne = -1 
+ zero = 0 
+ one = 1 
+ four = 4 
+ max = 999999 
+ set = 1 
+ add = 0 
+ sineWave0* = 0 
+ sineWave1 = 39259 
+ sineWave2 = 78459 
+ sineWave3 = 117537 
+ sineWave4 = 156434 
+ sineWave5 = 195090 
+ sineWave6 = 233445 
+ sineWave7 = 271441 
+ sineWave8 = 309017 
+ sineWave9 = 346117 
+ sineWave10 = 382684 
+ sineWave11 = 418660 
+ sineWave12 = 453991 
+ sineWave13 = 488622 
+ sineWave14 = 522499 
+ sineWave15 = 555571 
+ sineWave16 = 587786 
+ sineWave17 = 619095 
+ sineWave18 = 649449 
+ sineWave19 = 678802 
+ sineWave20 = 707108 
+ sineWave21 = 734323 
+ sineWave22 = 760407 
+ sineWave23 = 785318 
+ sineWave24 = 809018 
+ sineWave25 = 831470 
+ sineWave26 = 852641 
+ sineWave27 = 872497 
+ sineWave28 = 891007 
+ sineWave29 = 908144 
+ sineWave30 = 923880 
+ sineWave31 = 938192 
+ sineWave32 = 951057 
+ sineWave33 = 962456 
+ sineWave34 = 972370 
+ sineWave35 = 980785 
+ sineWave36 = 987688 
+ sineWave37 = 993068 
+ sineWave38 = 996917 
+ sineWave39 = 999229 
+ sineWave40 = 999999 
+ step = 1 
+ sig4 = 0 
+ ~ 
+ --signal 2 
+ chg_value sig4 set four w u v 
+ send_signal four w u v 
+ --signal 3 
+ chg_value sig4 set zero w u v 
+ --signal 4 
+ if 0 sineWave0* zero 40 86 
+ chg_value step set one w u v 
+ chg_value_ 33.sineWave0* add one w u v 
+ chg_value_ 79.sineWave0* add one w u v 
+ chg_value_ 124.sineWave0* add one w u v 
+ chg_value_ 125.sineWave0* add one w u v 
+ send_signal sig4 w u v 
+ if_ 0 sineWave0* max 40 40 
+ chg_value step set negativeOne w u v 
+ chg_value_ 33.sineWave0* add negativeOne w u v 
+ chg_value_ 79.sineWave0* add negativeOne w u v 
+ chg_value_ 124.sineWave0* add negativeOne w u v 
+ chg_value_ 125.sineWave0* add negativeOne w u v 
+ send_signal sig4 w u v 
+ place_light sineWave0* sineWave0* zero U V W 
+ chg_value_ 33.sineWave0* add step w u v 
+ chg_value_ 79.sineWave0* add step w u v 
+ chg_value_ 124.sineWave0* add step w u v 
+ chg_value_ 125.sineWave0* add step w u v 
+ send_signal sig4 w u v

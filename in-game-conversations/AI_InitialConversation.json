@@ -1,0 +1,87 @@
+
+{
+  "allBranches": [
+    {
+      "branchId": 0,
+      "response": "Yes, thanks.  Why has the general alarm been raised?",
+      "nodeId": 1
+    },
+    {
+      "branchId": 1,
+      "response": "Yeah, OK I guess.  Who are you?",
+      "nodeId": 2
+    },
+    {
+      "branchId": 2,
+      "response": "Until the alarm woke me up yes.  What time is it?",
+      "nodeId": 3
+    },
+    {
+      "branchId": 3,
+      "response": "I never thought I'd see a 2D collapse happen on my watch.",
+      "nodeId": 4
+    },
+    {
+      "branchId": 4,
+      "response": "<Quiet moment of reflection>  How many casualties are there?",
+      "nodeId": 5
+    },
+    {
+      "branchId": 5,
+      "response": "Well, hello IA2.  What is this alarm about?",
+      "nodeId": 1
+    },
+    {
+      "branchId": 6,
+      "response": "Well met.  Now, I must find out what's triggered this alarm.",
+      "nodeId": 6
+    },
+    {
+      "branchId": 7,
+      "response": "No worries.  What kind of problem?",
+      "nodeId": 1
+    },
+    {
+      "branchId": 8,
+      "response": "I see.  Who are you by the way?",
+      "nodeId": 2
+    }
+  ],
+  "nodes": [
+    {
+      "nodeId": 0,
+      "speech": "Hi Sarah.  Did you sleep well?",
+      "theseBranches": [0, 1, 2]
+    },
+    {
+      "nodeId": 1,
+      "speech": "There's been a disaster in the gem mine.  A gem somehow got ~shattered during extraction and it's collapsed a substantial ~volume of the base into 2 dimensional space.",
+      "theseBranches": [3, 4]
+    },
+    {
+      "nodeId": 2,
+      "speech": "I'm IA2, the semi - autonomous AI assigned to this base.  I ~was only installed a few days ago when IA1 retired, hence ~why we hadn't met yet.",
+      "theseBranches": [5, 6]
+    },
+    {
+      "nodeId": 3,
+      "speech": "It's 4:20 AM base standard time.  Sorry to get you up so ~early officer but there's been a problem in the gem mine.",
+      "theseBranches": [7, 8]
+    },
+    {
+      "nodeId": 4,
+      "speech": "Me neither (and I was only installed about 3.5 days ago).  ~It gets worse though as the 2 dimensional collapse has a ~complex boundary.  While there's a central region that's ~collapsed completely (flattening everyone and everthing ~within it) small pockets of 3D space have collapsed around ~this.  The full consequences aren't yet clear but it appears ~some people and objects have been corrupted.  ~<The communication suddenly cuts out and shortly after you ~hear your room door unlock.>",
+      "theseBranches": []
+    },
+    {
+      "nodeId": 5,
+      "speech": "Out of the pre - disaster base population of 1603 the ~statistics are as follows.~Dead: 1143~Corrupted: 428~Alive: 32~<You are about to ask what corrupted means when the ~communication suddenly cuts out and shortly after you hear ~your room door unlock.>",
+      "theseBranches": []
+    },
+    {
+      "nodeId": 6,
+      "speech": "OK, be careful out there.  There's at least one person still ~alive in this sector who may be able to help you: Ben Davies ~(Business Continuity Manager).~<Something about the second sentence gives you cause for ~concern but before you can ask another questions the ~communication suddenly cuts out and shortly after you hear ~your room door unlock.>",
+      "theseBranches": []
+    }    
+  ]
+}

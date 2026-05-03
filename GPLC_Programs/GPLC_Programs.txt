@@ -13,3 +13,6 @@ CombinationLockEndStage
 SarahShields
 Lift
 LiftTrigger
+Blocker
+AlertLight
+AI_Conversation1

@@ -15,8 +15,10 @@ w = 0
  five = 5 
  eight = 8 
  baseHealth = 80 
- targetU = 49 
- targetV = 49 
+ targetU1 = 49 
+ targetV1 = 49 
+ targetU2 = 28 
+ targetV2 = 35 
  teleportW = 1100000 
  teleportU = 30500000 
  teleportV = 27500000 
@@ -38,7 +40,8 @@ w = 0
  --signal 2 
  set_player_class two 
  chg_ps1 zero one baseHealth 
- send_signal two zero targetU targetV 
+ send_signal two zero targetU1 targetV1 
+ send_signal two one targetU2 targetV2 
  send_signal five w u2 v2 
  chg_ps0 one one teleportW 
  chg_ps0 two one teleportU 
