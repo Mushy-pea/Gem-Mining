@@ -1,0 +1,52 @@
+DoorController
+~
+w = 0 
+ u = 0 
+ v = 0 
+ u1 = 0 
+ v1 = 0 
+ u2 = 0 
+ v2 = 0 
+ w1 = -2 
+ targetU3 = 28 
+ targetV3 = 35 
+ msgLength = 3 
+ zero = 0 
+ two = 2 
+ three = 3 
+ four = 4 
+ leftSpeed = -12500 
+ rightSpeed = 12500 
+ maxLeft = 1000000 
+ minLeft = 0 
+ add = 0 
+ set = 1 
+ velocity = 0 
+ left = 1000000 
+ ~ 
+ --signal 1 
+ send_signal two w u v 
+ --signal 2 
+ if 0 velocity zero 5 0 
+ send_signal three w u v 
+ do_nothing 0 
+ --signal 3 
+ if 0 left maxLeft 24 24 
+ chg_value velocity set leftSpeed w u v 
+ chg_value left add leftSpeed w u v 
+ send_signal three w targetU3 targetV3 
+ send_signal four w u v 
+ chg_value velocity set rightSpeed w u v 
+ chg_value left add rightSpeed w u v 
+ send_signal two w targetU3 targetV3 
+ send_signal four w u v 
+ --signal 4 
+ if 2 left minLeft 43 15 
+ if_ 1 left maxLeft 22 15 
+ chg_state two add velocity w1 u v w1 u v 
+ chg_value left add velocity w u v 
+ send_signal four w u v 
+ chg_value velocity set zero w u v 
+ chg_grid_ two w u2 v2 w u1 v1 
+ chg_value velocity set zero w u v 
+ chg_grid_ zero w u1 v1 w u1 v1

@@ -16,3 +16,4 @@ LiftTrigger
 Blocker
 AlertLight
 AI_Conversation1
+DoorController
