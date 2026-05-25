@@ -31,14 +31,12 @@ w = 0
  send_signal three w u v 
  do_nothing 0 
  --signal 3 
- if 0 left maxLeft 24 24 
+ if 0 left maxLeft 19 19 
  chg_value velocity set leftSpeed w u v 
  chg_value left add leftSpeed w u v 
- send_signal three w targetU3 targetV3 
  send_signal four w u v 
  chg_value velocity set rightSpeed w u v 
  chg_value left add rightSpeed w u v 
- send_signal two w targetU3 targetV3 
  send_signal four w u v 
  --signal 4 
  if 2 left minLeft 43 15 

@@ -5,6 +5,16 @@ w = 1
  v = 35 
  targetU1 = 25 
  targetV1 = 32 
+ targetU2 = 28 
+ targetV2 = 35 
+ targetU3 = 32 
+ targetV3 = 35 
+ targetU4 = 24 
+ targetV4 = 0 
+ targetU5 = 49 
+ targetV5 = 24 
+ targetU6 = 24 
+ targetV6 = 49 
  msgLength0 = 59 
  nodeLength0 = 174 
  nodeLength1 = 296 
@@ -25,6 +35,7 @@ w = 1
  num10 = 10 
  num11 = 11 
  num12 = 12 
+ num19 = 19 
  branchTable0* = 0 
  branchTable0_0 = 13 
  branchTable0_1 = 14 
@@ -38,9 +49,9 @@ w = 1
  branchTable3* = 0 
  branchTable3_7 = 13 
  branchTable3_8 = 14 
- branchTable*1 = 29 
- branchTable*2 = 32 
- branchTable*3 = 35 
+ branchTable*1 = 40 
+ branchTable*2 = 43 
+ branchTable*3 = 46 
  add = 0 
  set = 1 
  on = 1 
@@ -57,19 +68,19 @@ w = 1
  35 41 40 45 63 27 48 27 35 38 27 28 38 31 
  --signal 2 
  if 0 switch on 12 0 
- chg_value_ 177.branchTable* add one w u v 
+ chg_value_ 180.branchTable* add one w u v 
  send_signal five w u v 
  do_nothing 0 
  --signal 3 
- chg_value_ 177.branchTable* add two w u v 
+ chg_value_ 180.branchTable* add two w u v 
  send_signal five w u v 
  --signal 4 
- chg_value_ 177.branchTable* add three w u v 
+ chg_value_ 180.branchTable* add three w u v 
  send_signal five w u v 
  --signal 5 
  send_signal branchTable0* w u v 
  --signal 6 
- pass_msg 176 nodeLength0 04 01 29 35 -1 00 08 35 63 19 27 44 27 
+ pass_msg 176 nodeLength0 70 01 29 35 -1 00 08 35 63 19 27 44 27 
  34 66 63 63 04 35 30 63 51 41 47 63 45 38 31 31 
  42 63 49 31 38 38 67 -1 01 25 31 45 64 63 46 34 
  27 40 37 45 66 63 63 23 34 51 63 34 27 45 63 46 
@@ -82,7 +93,7 @@ w = 1
  63 23 34 27 46 63 46 35 39 31 63 35 45 63 35 46 
  67 
  --signal 7 
- pass_msg 298 nodeLength1 04 01 29 35 -1 00 20 34 31 44 31 65 45 
+ pass_msg 298 nodeLength1 71 01 29 35 -1 00 20 34 31 44 31 65 45 
  63 28 31 31 40 63 27 63 30 35 45 27 45 46 31 44 
  63 35 40 63 46 34 31 63 33 31 39 63 39 35 40 31 
  66 63 63 01 63 33 31 39 63 45 41 39 31 34 41 49 
@@ -102,7 +113,7 @@ w = 1
  63 39 27 40 51 63 29 27 45 47 27 38 46 35 31 45 
  63 27 44 31 63 46 34 31 44 31 67 
  --signal 8 
- pass_msg 259 nodeLength2 04 01 29 35 -1 00 09 65 39 63 09 01 55 
+ pass_msg 259 nodeLength2 70 01 29 35 -1 00 09 65 39 63 09 01 55 
  64 63 46 34 31 63 45 31 39 35 63 71 63 27 47 46 
  41 40 41 39 41 47 45 63 01 09 63 27 45 45 35 33 
  40 31 30 63 46 41 63 46 34 35 45 63 28 27 45 31 
@@ -120,7 +131,7 @@ w = 1
  44 35 33 33 31 44 31 30 63 46 34 35 45 63 27 38 
  27 44 39 66 
  --signal 9 
- pass_msg 193 nodeLength3 04 01 29 35 -1 00 09 46 65 45 63 57 69 
+ pass_msg 193 nodeLength3 71 01 29 35 -1 00 09 46 65 45 63 57 69 
  55 53 63 01 13 63 28 27 45 31 63 45 46 27 40 30 
  27 44 30 63 46 35 39 31 66 63 63 19 41 44 44 51 
  63 46 41 63 33 31 46 63 51 41 47 63 47 42 63 45 
@@ -134,9 +145,8 @@ w = 1
  44 31 63 51 41 47 63 28 51 63 46 34 31 63 49 27 
  51 67 
  --signal 10 
- chg_value switch set off w u v 
- send_signal two w targetU1 targetV1 
- pass_msg 512 nodeLength4 04 01 29 35 -1 00 13 31 63 40 31 35 46 
+ send_signal num19 w u v 
+ pass_msg 512 nodeLength4 70 01 29 35 -1 00 13 31 63 40 31 35 46 
  34 31 44 63 74 27 40 30 63 09 63 49 27 45 63 41 
  40 38 51 63 35 40 45 46 27 38 38 31 30 63 27 28 
  41 47 46 63 56 66 58 63 30 27 51 45 63 27 33 41 
@@ -170,9 +180,8 @@ w = 1
  41 44 63 47 40 38 41 29 37 66 77 -1 01 05 50 35 
  46 
  --signal 11 
- chg_value switch set off w u v 
- send_signal two w targetU1 targetV1 
- pass_msg 275 nodeLength5 04 01 29 35 -1 00 15 47 46 63 41 32 63 
+ send_signal num19 w u v 
+ pass_msg 275 nodeLength5 71 01 29 35 -1 00 15 47 46 63 41 32 63 
  46 34 31 63 42 44 31 63 71 63 30 35 45 27 45 46 
  31 44 63 28 27 45 31 63 42 41 42 47 38 27 46 35 
  41 40 63 41 32 63 54 59 53 56 63 46 34 31 63 -1 
@@ -191,9 +200,8 @@ w = 1
  63 30 41 41 44 63 47 40 38 41 29 37 66 77 -1 01 
  05 50 35 46 
  --signal 12 
- chg_value switch set off w u v 
- send_signal two w targetU1 targetV1 
- pass_msg 370 nodeLength6 04 01 29 35 -1 00 15 11 64 63 28 31 63 
+ send_signal num19 w u v 
+ pass_msg 370 nodeLength6 70 01 29 35 -1 00 15 11 64 63 28 31 63 
  29 27 44 31 32 47 38 63 41 47 46 63 46 34 31 44 
  31 66 63 63 20 34 31 44 31 65 45 63 27 46 63 38 
  31 27 45 46 63 41 40 31 63 42 31 44 45 41 40 63 
@@ -218,17 +226,25 @@ w = 1
  30 41 41 44 63 47 40 38 41 29 37 66 77 -1 01 05 
  50 35 46 
  --signal 13 
- chg_value_ 177.branchTable* set branchTable*1 w u v 
+ chg_value_ 180.branchTable* set branchTable*1 w u v 
  send_signal seven w u v 
  --signal 14 
- chg_value_ 177.branchTable* set branchTable*2 w u v 
+ chg_value_ 180.branchTable* set branchTable*2 w u v 
  send_signal eight w u v 
  --signal 15 
- chg_value_ 177.branchTable* set branchTable*3 w u v 
+ chg_value_ 180.branchTable* set branchTable*3 w u v 
  send_signal nine w u v 
  --signal 16 
  send_signal num10 w u v 
  --signal 17 
  send_signal num11 w u v 
  --signal 18 
- send_signal num12 w u v
+ send_signal num12 w u v 
+ --signal 19 
+ chg_value switch set off w u v 
+ send_signal two w targetU1 targetV1 
+ send_signal three w targetU2 targetV2 
+ send_signal three w targetU3 targetV3 
+ send_signal two w targetU4 targetV4 
+ send_signal two w targetU5 targetV5 
+ send_signal two w targetU6 targetV6
