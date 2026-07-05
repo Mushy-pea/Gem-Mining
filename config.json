@@ -1,0 +1,65 @@
+{
+  "map": {
+    "mapFilePath": "/home/steven/Gem-Mining/Maps/",
+    "mapFile": "map1.dan",
+    "mapFileVersion": "10"
+  },
+  "assets": {
+    "modelDataDir": "/home/steven/Gem-Mining-Assets/CookedModels/",
+    "soundDataDir": "/home/steven/Gem-Mining-Assets/Sounds/"
+  },
+  "saveGames": {
+    "gameSavePath": "/home/steven/Gem-Mining/saved-games/",
+    "currentSave": -1
+  },
+  "controls": {
+    "pause": "p",
+    "forward": "w",
+    "back": "s",
+    "strafeLeft": "a",
+    "strafeRight": "d",
+    "turnLeft": "k",
+    "turnRight": "l",
+    "jump": "u",
+    "lightTorch": "t",
+    "switchView": "KeyHome",
+    "rotateView": "KeyEnd",
+    "fire": " ",
+    "menuUp": "KeyUp",
+    "menuDown": "KeyDown"
+  },
+  "graphics": {
+    "shaderFile": "shaders.glsl",
+    "resolutionX": 2560,
+    "resolutionY": 1440,
+    "minFrameT": 15000000,
+    "maxLights": 5,
+    "frustumScale1": 1.25
+  },
+  "sound": {
+    "music": "off",
+    "musicPeriod": 15040
+  },
+  "physics": {
+    "initU": 24.5,
+    "initV": 24.5,
+    "initW": 0.2,
+    "gravity": -1.125,
+    "friction": -0.3,
+    "runPower": 180,
+    "jumpPower": 1.5,
+    "speedScaling": 1.25
+  },
+  "debug": {
+    "verboseMode": "y",
+    "saveGameTest": "n"
+  },
+  "misc": {
+    "splashImage": "off",
+    "probC": 0,
+    "versionString": "Linux x86_64 Engine version: 1.4.8 Server version: 2.2.5 (commit ceec25b0) 14/06/2026",
+    "onScreenMetrics": "medium",
+    "surveyStart": -95,
+    "surveySize": 190
+  }
+}
